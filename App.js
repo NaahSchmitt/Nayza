@@ -16,10 +16,8 @@ export default function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
-    // Oculta a barra de navegação
     NavigationBar.setVisibilityAsync('hidden');
 
-    // Opcional: Retorna a visibilidade da barra de navegação ao desmontar o componente
     return () => {
       NavigationBar.setVisibilityAsync('visible');
     };
