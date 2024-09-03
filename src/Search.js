@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { View, Text, ImageBackground, StyleSheet, SafeAreaView, ScrollView, } from 'react-native';
+import React from 'react';
+import { View, Text, ImageBackground, StyleSheet, SafeAreaView, } from 'react-native';
 import BarraSuperior from './components/BarraSuperior';
-import InputSearch from './components/InputSearch';
-
-
+import InputSearch from './components/Numeros';
 
 export default function Seacrh() {
   return (
@@ -12,31 +10,30 @@ export default function Seacrh() {
         source={require('./img/Wallpaper.png')}
         resizeMode="cover"
         style={styles.imageBackground}>
-        <BarraSuperior />
 
-        
-        <ScrollView style={styles.containerScroll}>
-        <InputSearch />
-        </ScrollView>
+        <BarraSuperior />
+        <View style={styles.centerContainer}>
+          <InputSearch />
+        </View>
       </ImageBackground>
     </SafeAreaView>
-
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: 'transparent'
   },
   imageBackground: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
   },
-  containerScroll: {
-    marginBottom: 100,
-    width: '100%'
-  }
+  centerContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '10%'
+  },
 });

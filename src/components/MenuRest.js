@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     marginBottom: 90,
+    marginTop: 50
   },
   card: {
     flexDirection: 'row',

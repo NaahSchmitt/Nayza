@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { View, Text, StyleSheet, ImageBackground } from 'react-native';
-import { Menu, MenuItem, MenuDivider } from 'react-native-material-menu';
+import { View, Text, StyleSheet } from 'react-native';
+import { Menu, MenuItem } from 'react-native-material-menu';
 
 export default function ButtonMenu() {
   const [visible, setVisible] = useState(false);
