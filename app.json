@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "nayzaapp",
-    "slug": "snack-a0a9f77d-8ac5-48a2-8174-2420ebf4e43a",
+    "name": "Nayza",
+    "slug": "nayzaapp",
     "version": "1.0.0",
     "androidNavigationBar": {
       "visible": "sticky-immersive"
